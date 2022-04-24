@@ -27,7 +27,7 @@ SECRET_KEY = '&9!lz0%ojavpnu4eg)zmiiiis-g&4_mt8rux!hqrafh8**=o3e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['valenciarestaurant.herokuapp.com']
 
 
 # Application definition
