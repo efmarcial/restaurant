@@ -2,3 +2,5 @@ django
 gunicorn
 django-ckeditor
 django-mptt
+whitenoise
+pillow
