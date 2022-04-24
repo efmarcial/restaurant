@@ -27,7 +27,7 @@ SECRET_KEY = '&9!lz0%ojavpnu4eg)zmiiiis-g&4_mt8rux!hqrafh8**=o3e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['valenciarestaurant.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','valenciarestaurant.herokuapp.com']
 
 
 # Application definition
@@ -127,6 +127,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+# Extra places for collectstatics to find static files.
+STATICFILES_DIRS = (
+     os.path.join(BASE_DIR, 'static'),
+)
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT: str = os.path.join(BASE_DIR, 'uploads/')
 
